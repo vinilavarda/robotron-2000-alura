@@ -1,7 +1,14 @@
-const robotron = document.querySelector('#Robotron')
+const subtrair = document.querySelector('#subtrair')
+const somar = document.querySelector('#somar')
+let braco = document.querySelector('#braco')
 
-robotron.addEventListener('click', dizOi)
+somar.addEventListener('click', () => {
+  braco.value = parseInt(braco.value) + 1
+})
 
-function dizOi() {
-  console.log('Oi')
-}
+subtrair.addEventListener('click', () => {
+  braco.value = parseInt(braco.value) - 1
+  if (parseInt(braco.value) <= 0) {
+    braco.value = 0
+  }
+})
