@@ -36,6 +36,8 @@ const pecas = {
   }
 }
 
+//testando nova branch
+
 controle.forEach(elemento => {
   elemento.addEventListener('click', evento => {
     manipulaDados(evento.target.textContent, evento.target.parentNode) //seleciona o texto que está inserido dentro do botão clicado */* seleciona a classe pai do evento.
